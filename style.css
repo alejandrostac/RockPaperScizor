@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contenedor {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.division {
+  flex: 1;
+  height: 100%;
+}
+
+.division.blanca {
+  background-color: white;
+  height: 85%;
+}
+
+.division.negra {
+  background-color: black;
+  flex: 0.15;
+}
+
+.division.gris {
+  background-color: gray;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+.marcador{
+  margin: 3%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.columna {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 5px;
+}
+
+.lineaDivisoria {
+  border-right: 1px solid black;
+  margin: 0 10px;
+  align-self: stretch;
+}
+
+#contenedorSeleccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#contenedorSeleccion h1 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  line-height: 1;
+}

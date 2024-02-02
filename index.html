@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <div class="division negra"></div>
+    <div class="division blanca">
+      <div class="division gris">
+        <h1>Piedra, Papel o Tijera</h1>
+      </div>
+      <div class="marcador">
+        <h1 id="marker"><span id="player">0</span>-<span id="cpu">0</span><br>Marcador</h1>
+      </div>
+      <div class="contenedor">
+        <div class="columna">
+          <h1>Tu<br>Selecciona una opcion</h1>
+          <div class="buttonsGroup">
+            <button onclick="play(1,'Papel','img/paper.jpg')"><img src="img/paper.jpg"></button>
+            <button onclick="play(2,'Piedra','img/rock.jpg')"><img src="img/rock.jpg"></button>
+            <button onclick="play(3,'Tijera','img/scizor.jpg')"><img src="img/scizor.jpg"></button>
+          </div>
+        </div>
+        <div id="contenedorSeleccion" class="columna">
+          <div id="selected" class="columna"></div>
+          <div class="lineaDivisoria"></div>
+          <div id="selected_pc" class="columna"></div>
+        </div>
+        <div class="columna">
+          <h1>Computadora<br><br></h1>
+          <div class="buttonsGroup">
+            <img src="img/paper.jpg">
+            <img src="img/rock.jpg">
+            <img src="img/scizor.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="division negra"></div>
+  </div>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
